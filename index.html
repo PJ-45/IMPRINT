@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>index.html</title>
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link rel="preload" href="/mnt/data/Inter.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body style="padding-top: 96px">
+<nav class="navbar navbar-expand-lg navbar-light casualBGcolor fixed-top shadow-sm">
+  <div class="container"> 
+    
+    <!-- Logo --> 
+    <a class="navbar-brand brand-title d-flex align-items-center" href="index.html" id="logoBtn">
+  <img src="images/imprint.png" width="60" class="me-2" alt="Logo">
+</a>
+
+    <!-- Mobile Menu Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav mx-auto align-items-center">
+        <!-- Nutrition Dropdown -->
+        <li class="nav-item dropdown mx-2"> <a class="nav-link nav-text" href="nutrition.html" id="navNutrition" role="button"> Nutrition </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="nutrition.html#guides">Guides</a></li>
+            <li><a class="dropdown-item" href="nutrition.html#essentials">Essentials</a></li>
+            <li><a class="dropdown-item" href="nutrition.html#mealplan">Sample</a></li>
+          </ul>
+        </li>
+        <!-- Other Menu Items -->
+        <li class="nav-item dropdown mx-2"> <a class="nav-link nav-text" href="workout.html" id="navWorkout" role="button"> Workout </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="workout.html#guides">Routine</a></li>
+            <li><a class="dropdown-item" href="workout.html#essentials">Core</a></li>
+            <li><a class="dropdown-item" href="workout.html#dailytips">Needs</a></li>
+            <li><a class="dropdown-item" href="workout.html#mealplan">Quick 15</a></li>
+          </ul>
+        </li>
+		<li class="nav-item dropdown mx-2"> <a class="nav-link nav-text" href="benefits.html" id="navBenefits" role="button">Benefits</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="benefits.html#guides">Overview</a></li>
+            <li><a class="dropdown-item" href="benefits.html#essentials">Immediate</a></li>
+            <li><a class="dropdown-item" href="benefits.html#dailytips">Long-Term</a></li>
+            <li><a class="dropdown-item" href="benefits.html#mealplan">Daily</a></li>
+          </ul>
+        </li>
+		<li class="nav-item dropdown mx-2"> <a class="nav-link nav-text" href="journey.html" id="navJourney" role="button">Journey</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="journey.html#record">Record</a></li>
+            <li><a class="dropdown-item" href="journey.html#progress">Progress</a></li>
+          </ul>
+        </li>
+		<li class="nav-item dropdown mx-2"> <a class="nav-link nav-text" href="about.html" id="navAbout" role="button">About</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="about.html#guides">Story</a></li>
+            <li><a class="dropdown-item" href="about.html#essentials">Promise</a></li>
+            <li><a class="dropdown-item" href="about.html#dailytips">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- Search Icon (right aligned) -->
+    <div class="nav-search ms-auto">
+  <div class="search-box">
+    <input type="text" class="search-input" placeholder="What are you looking for?">
+    <i class="bi bi-search search-icon"></i>
+  </div>
+</div></div>
+</nav>
+
+<div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active"><img class="d-block w-100" src="images/poster01.svg" alt="First slide">
+      <div class="carousel-caption"> </div>
+    </div>
+    <div class="carousel-item"><img class="d-block w-100" src="images/poster02.svg" alt="Second slide">
+      <div class="carousel-caption"> </div>
+    </div>
+    <div class="carousel-item"><img class="d-block w-100" src="images/poster03.svg" alt="Third slide">
+      <div class="carousel-caption"> </div>
+    </div>
+  </div>
+<a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></a></div>
+<header> </header>
+<section class="container my-5">
+  <h1 class="section-title text-center mb-4">
+    Redefine Your Lifestyle
+  </h1>
+
+  <p class="guides-intro mx-auto text-center mb-5">
+    In today’s fast-paced world, many neglect their physical and mental well-being.
+    Achieve Your Dream Body is designed to help users restore balance—not just by
+    shaping their body, but by building sustainable, healthy habits.
+  </p>
+
+  <div class="row align-items-center justify-content-center gy-4">
+
+    <!-- Left (small image) -->
+    <div class="col-xl-3 col-md-4 text-center">
+      <img
+        src="images/lifting1.jpg"
+        class="img-fluid guides-sub-img lifestyle-img"
+        alt="Fitness"
+      >
+    </div>
+
+    <!-- Center (main image) -->
+    <div class="col-xl-6 col-md-4 text-center">
+      <img
+        src="images/Meditation1.jpg"
+        class="img-fluid guides-main-img lifestyle-img active"
+        alt="Healthy Food"
+      >
+    </div>
+
+    <!-- Right (small image) -->
+    <div class="col-xl-3 col-md-4 text-center">
+      <img
+        src="images/food.jpg"
+        class="img-fluid guides-sub-img lifestyle-img"
+        alt="Meditation"
+      >
+    </div>
+
+  </div>
+</section>
+	
+<div class="container">
+<h1 class="section-title text-center mb-4">
+    Start Your Transformation
+  </h1>
+<div class="row">
+  <div class="col-xl-6 py-3">
+    <a href="Nutrition.html" class="text-decoration-none text-dark">
+      <div class="p-5 bg-gray-gradient border">｜ Daily Tracking</div>
+    </a>
+  </div>
+
+  <div class="col-xl-6 py-3">
+    <a href="nutrition.html" class="text-decoration-none text-dark">
+      <div class="p-5 bg-gray-gradient border">｜ Nutrition Guide</div>
+    </a>
+  </div>
+
+  <div class="col-xl-6 py-3">
+    <a href="journey.html" class="text-decoration-none text-dark">
+      <div class="p-5 bg-gray-gradient border">｜ Progress Journey</div>
+    </a>
+  </div>
+
+  <div class="col-xl-6 py-3">
+    <a href="badges.html" class="text-decoration-none text-dark">
+      <div class="p-5 bg-gray-gradient border">｜ Achievement Badges</div>
+    </a>
+  </div>
+
+</div>
+
+</div>
+<div class="container-fluid">
+  <h1></h1>
+  <div class="voices by ATDB_bg"><img src="images/voices by ATDB_bg.svg" class="img-fluid" alt=""/></div>
+    <div class="container">
+	<h1 class="section-title text-center mb-4">Video
+  </h1>
+      <div class="video-row"> 
+        <!-- Left Video -->
+        <div class="video-container">
+          <iframe
+      src="https://www.youtube.com/embed/Cg_GW7yhq20"
+      title="Left Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen> </iframe>
+        </div>
+        
+        <!-- Right Video | 已替換為 KD-FmeueFUo -->
+        <div class="video-container">
+          <iframe
+      src="https://www.youtube.com/embed/KD-FmeueFUo"
+      title="Right Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen> </iframe>
+        </div>
+      </div>
+    </div></div>
+<script src="js/jquery-3.4.1.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script> 
+<script>
+document.addEventListener("scroll", function() {
+  const nav = document.querySelector(".navbar");
+  if (window.scrollY > 20) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.removeAttribute("style"); // 重置為原本樣式
+    nav.classList.remove("scrolled");
+  }
+});
+</script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// 全站淡入
+document.addEventListener("DOMContentLoaded", () => {
+  requestAnimationFrame(() => {
+    document.body.classList.add("fade-in");
+  });
+});
+
+// 所有超連結淡出跳頁
+document.querySelectorAll("a[href]").forEach(a => {
+  a.addEventListener("click", function(e) {
+    const href = this.getAttribute("href");
+
+    // ⚠ 不處理錨點 (#xxx)
+    if (href.startsWith("#")) return;
+
+    // ⚠ 外部連結也跳過
+    if (href.startsWith("http")) return;
+
+    e.preventDefault();
+
+    // 加上淡出 class
+    document.body.classList.add("fade-out");
+
+    // 🚀 關鍵：等瀏覽器渲染一幀再換頁，動畫才會流暢
+    setTimeout(() => {
+      window.location = href;
+    }, 750); // 必須與 CSS transition 一樣（0.75s）
+  });
+});
+const logo = document.getElementById("logoBtn");
+
+logo.addEventListener("click", function(e){
+  const href = this.getAttribute("href");
+
+  // 在首頁 → 平滑滑到最上方
+  if (window.location.pathname.includes("index.html") ||
+      window.location.pathname === "/") 
+  {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+
+  // 其他頁 → 淡出跳首頁
+  e.preventDefault();
+  document.body.classList.add("fade-out");
+
+  setTimeout(() => {
+    window.location = href;
+  }, 750);
+});
+
+</script>
+
+</body>
+<footer>
+  <div class="container-fluid">
+    <div class="row pt-2 pb-2 bg-light justify-content-center">
+      <div class="py-5 px-3 text-dark col-xl-2">Explore<br>
+        <ul class="active">
+          <li>Home</li>
+          <li>Features</li>
+          <li>Blog</li>
+          <li>Stories</li>
+        </ul>
+      </div>
+      <div class="py-5 text-dark col-xl-2">Wellness<br>
+        <ul class="active">
+          <li>Nutrition</li>
+          <li>Fitness</li>
+          <li>Tips</li>
+          <li>Tracker</li>
+        </ul>
+      </div>
+      <div class="py-5 text-dark col-xl-2">Support<br>
+        <ul class="active">
+          <li>Help Center</li>
+          <li>Contact Us</li>
+          <li>FAQ</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+<div class="py-5 text-dark col-xl-2">Follow Us<br>&nbsp;&nbsp;
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><br>&nbsp;&nbsp;
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a><br>&nbsp;&nbsp;
+  <a href="https://www.facebook.com/?locale=zh_TW" target="_blank" rel="noopener">Facebook</a><br>&nbsp;&nbsp;
+  <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a></div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row pb-4 bg-light justify-content-center text-center">Designed for a healthier, lighter you.<br>
+      © 2025 Achieve Your Dream Body. All Rights Reserved.</div>
+  </div>
+</footer>
+</html>

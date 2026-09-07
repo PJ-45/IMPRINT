@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>index.html</title>
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link rel="preload" href="/mnt/data/Inter.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body style="padding-top: 96px">
+<nav class="navbar navbar-expand-lg navbar-light casualBGcolor fixed-top shadow-sm">
+  <div class="container"> 
+    
+    <!-- Logo --> 
+<a class="navbar-brand brand-title d-flex align-items-center" href="index.html">
+  <img src="images/imprint.png" width="60" class="me-2" alt="Logo">
+</a>    
+    <!-- Mobile Menu Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav mx-auto align-items-center">
+        <!-- Nutrition Dropdown -->
+        <li class="nav-item dropdown mx-2"> <a class="nav-link nav-text" href="nutrition.html" id="navNutrition" role="button"> Nutrition </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="nutrition.html#guides">Guides</a></li>
+            <li><a class="dropdown-item" href="nutrition.html#essentials">Essentials</a></li>
+            <li><a class="dropdown-item" href="nutrition.html#mealplan">Sample</a></li>
+          </ul>
+        </li>
+		  <li class="nav-item dropdown mx-2"> <a class="nav-link nav-text" href="workout.html" id="navWorkout" role="button"> Workout </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="workout.html#routine">Routine</a></li>
+            <li><a class="dropdown-item" href="workout.html#strategies">Strategies</a></li>
+            <li><a class="dropdown-item" href="workout.html#needs">Weekly Plan</a></li>
+            <li><a class="dropdown-item" href="workout.html#quick 15">Quick 15</a></li>
+          </ul>
+        </li>
+		<li class="nav-item dropdown mx-2"> <a class="nav-link nav-text" href="benefits.html" id="navBenefits" role="button">Benefits</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="benefits.html#overview">Overview</a></li>
+            <li><a class="dropdown-item" href="benefits.html#immediate">Immediate</a></li>
+            <li><a class="dropdown-item" href="benefits.html#long-Term">Long-Term</a></li>
+            <li><a class="dropdown-item" href="benefits.html#impact">Impact</a></li>
+          </ul>
+        </li>
+		<li class="nav-item dropdown mx-2"> <a class="nav-link nav-text" href="journey.html" id="navJourney" role="button">Journey</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="journey.html#record">Record</a></li>
+            <li><a class="dropdown-item" href="journey.html#progress">Progress</a></li>
+          </ul>
+        </li>
+		<li class="nav-item dropdown mx-2"> <a class="nav-link nav-text" href="about.html" id="navAbout" role="button">About</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="about.html#guides">Story</a></li>
+            <li><a class="dropdown-item" href="about.html#essentials">Promise</a></li>
+            <li><a class="dropdown-item" href="about.html#dailytips">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- Search Icon (right aligned) -->
+    <div class="nav-search ms-auto">
+  <div class="search-box">
+    <input type="text" class="search-input" placeholder="What would you like to explore today?">
+    <i class="bi bi-search search-icon"></i>
+  </div>
+</div></div>
+
+</nav>
+<header> </header>
+
+<section class="daily-log container my-5">
+  <h2 id="record" class="text-center mb-4">Daily Health Log</h2>
+  <p class="text-center log-intro mb-5">
+    A simple, personal space to record your journey — clear, practical, and easy to track.
+  </p>
+
+  <!-- Body Info -->
+  <div class="log-card">
+    <p>Body Info</p>
+    <p class="log-grid">
+      <label>Weight (kg)<input type="text"></label>
+      <label>Body Fat (%)<input type="text"></label>
+      <label>Muscle Mass (kg)<input type="text"></label>
+      <label>BMI<input type="text"></label>
+    </p>
+  </div>
+
+  <!-- Meals -->
+<div class="log-card">
+  <p>Meals</p>
+  <p class="log-meals">
+    <label>Breakfast
+      <input type="file" class="custom-file">
+      <span class="file-btn">Upload</span>
+    </label>
+
+    <label>Lunch
+      <input type="file" class="custom-file">
+      <span class="file-btn">Upload</span>
+    </label>
+
+    <label>Dinner
+      <input type="file" class="custom-file">
+      <span class="file-btn">Upload</span>
+    </label>
+
+    <label>Snacks
+      <input type="file" class="custom-file">
+      <span class="file-btn">Upload</span>
+    </label>
+  </p>
+</div>
+
+
+  <!-- Hydration -->
+  <div class="log-card">
+    <p>Hydration</p>
+    <p class="log-grid">
+      <label>Water today (ml/L)<input type="text"></label></p></div>
+  <!-- Activity -->
+  <div class="log-card">
+    <p>Activity</p>
+    <p class="log-grid">
+      <label>Type / Duration / Intensity<input type="text"></label></p></div>
+  <!-- Sleep -->
+  <div class="log-card">
+    <p>Sleep</p>
+    <p class="log-grid">
+      <label>Hours  &amp; Quality<input type="text"></label></p></div>
+  <!-- Mood -->
+  <div class="log-card">
+    <p>Mood</p>
+    <p class="log-grid">
+      <label>Mood today<input type="text"></label></p></div>
+  <!-- AI Score -->
+  <div class="log-card">
+    <p>Daily Score (AI)</p>
+    <p class="log-grid">
+      <label>Health Score<input type="text"></label></p></div>
+</section>
+	
+<!-- 📌 HISTORY SECTION -->
+<section class="container my-5">
+  <h2 id="progress" class="section-title text-center">Your Progress</h2>
+
+  <ul class="nav nav-tabs justify-content-center history-tabs" id="historyTabs">
+    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#week">7 Days</a></li>
+    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month">1 Month</a></li>
+    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#year">1 Year</a></li>
+  </ul>
+
+  <div class="tab-content history-content mt-4">
+
+    <!-- 7 DAYS -->
+    <div class="tab-pane fade show active" id="week">
+      <div class="row">
+        <div class="col-md-4"><canvas id="chartWeight7"></canvas></div>
+        <div class="col-md-4"><canvas id="chartNutri7"></canvas></div>
+        <div class="col-md-4"><canvas id="chartWorkout7"></canvas></div>
+      </div>
+    </div>
+
+    <!-- MONTH -->
+    <div class="tab-pane fade" id="month">
+      <div class="row">
+        <div class="col-md-4"><canvas id="chartWeight30"></canvas></div>
+        <div class="col-md-4"><canvas id="chartNutri30"></canvas></div>
+        <div class="col-md-4"><canvas id="chartWorkout30"></canvas></div>
+      </div>
+    </div>
+
+    <!-- YEAR -->
+    <div class="tab-pane fade" id="year">
+      <div class="row">
+        <div class="col-md-4"><canvas id="chartWeight365"></canvas></div>
+        <div class="col-md-4"><canvas id="chartNutri365"></canvas></div>
+        <div class="col-md-4"><canvas id="chartWorkout365"></canvas></div>
+      </div>
+    </div>
+	  <div class="container">
+		  <div class="row">
+        <div class="col-md-4"><p class="chart-label text-center mt-1">Weight (kg)</p></div>
+        <div class="col-md-4"><p class="chart-label text-center mt-1">AI Nutrition Score</p></div>
+        <div class="col-md-4"><p class="chart-label text-center mt-1">Workout Consistency Rate (%)</p></div>
+      </div></div></div>
+
+
+</section>
+
+<script src="js/jquery-3.4.1.min.js"></script>       
+      <!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script> 
+<script>
+document.addEventListener("scroll", function() {
+  const nav = document.querySelector(".navbar");
+  if (window.scrollY > 20) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.removeAttribute("style"); // 重置為原本樣式
+    nav.classList.remove("scrolled");
+  }
+});
+</script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// 進入頁面時淡入
+document.addEventListener("DOMContentLoaded", function() {
+  document.body.classList.add("fade-in");
+});
+</script>
+<script>
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", function (e) {
+
+    const href = this.getAttribute("href");
+    if (href.startsWith("#")) return; // 不處理錨點
+
+    // 外部連結不處理
+    if (href.startsWith("http")) return;
+
+    e.preventDefault();
+    document.body.classList.add("fade-out");
+
+    setTimeout(() => {
+      window.location = href;
+    }, 400);
+  });
+});
+</script>
+<script>
+document.querySelectorAll(".faq-question").forEach(q => {
+  q.addEventListener("click", () => {
+    q.parentElement.classList.toggle("active");
+  });
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+/* ===================== SAVE DAILY INPUT ===================== */
+function saveDailyLog(weight, nutriScore, workoutYesNo) {
+  const today = new Date().toISOString().split("T")[0];
+  
+  let history = JSON.parse(localStorage.getItem("healthHistory")) || [];
+  history.push({
+    date: today,
+    weight: parseFloat(weight),
+    nutri: parseInt(nutriScore),
+    workout: workoutYesNo === "yes" ? 1 : 0
+  });
+
+  localStorage.setItem("healthHistory", JSON.stringify(history));
+}
+
+/* ===================== GET RANGE HISTORY ===================== */
+function getHistory(days) {
+  let history = JSON.parse(localStorage.getItem("healthHistory")) || [];
+  return history.slice(-days);
+}
+
+/* ===================== CREATE LINE CHART ===================== */
+function drawChart(canvasId, label, historyArr, key, color) {
+  const ctx = document.getElementById(canvasId);
+
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: historyArr.map(h => h.date.slice(5)),
+      datasets: [{
+        label: label,
+        data: historyArr.map(h => h[key]),
+        borderColor: color,
+        backgroundColor: color,
+        tension: 0.45,
+        borderWidth: 3,
+        fill: false,
+        pointRadius: 3,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false }},
+      scales: {
+        x: { ticks: { maxRotation: 0, minRotation: 0 }},
+        y: { beginAtZero: false }
+      }
+    }
+  });
+}
+
+/* ===================== CREATE YEAR WORKOUT BAR ===================== */
+function drawWorkoutYear(canvasId, historyArr) {
+  const rate = historyArr.length
+    ? (historyArr.filter(h => h.workout === 1).length / historyArr.length * 100).toFixed(1)
+    : 0;
+
+  new Chart(document.getElementById(canvasId), {
+    type: "bar",
+    data: {
+      labels: ["Consistency Rate"],
+      datasets: [{
+        data: [rate],
+        backgroundColor: "#776c87",  // <<<< 🎨 New Color for Workout
+        borderRadius: 8,
+        barThickness: 12
+      }]
+    },
+    options: {
+      indexAxis: "y",
+      plugins: {
+        legend: { display: false },
+        tooltip: { enabled: true }
+      },
+      scales: {
+        x: {
+          min: 0,
+          max: 100,
+          ticks: { callback: v => v + "%" }
+        },
+        y: { ticks: { display: false }}
+      }
+    }
+  });
+}
+
+/* ===================== RENDER ALL SCOPES ===================== */
+function renderCharts() {
+  const week = getHistory(7);
+  const month = getHistory(30);
+  const year = getHistory(365);
+
+  // 🎨 NEW COLOR USE
+  drawChart("chartWeight7", "Weight (kg)", week, "weight", "#6f8577");
+  drawChart("chartNutri7", "AI Nutrition Score (/70)", week, "nutri", "#8a806e");
+  drawChart("chartWorkout7", "Workout", week, "workout", "#776c87");
+
+  drawChart("chartWeight30", "Weight (kg)", month, "weight", "#6f8577");
+  drawChart("chartNutri30", "AI Nutrition Score (/70)", month, "nutri", "#8a806e");
+  drawChart("chartWorkout30", "Workout", month, "workout", "#776c87");
+
+  drawChart("chartWeight365", "Weight (kg)", year, "weight", "#6f8577");
+  drawChart("chartNutri365", "AI Nutrition Score (/70)", year, "nutri", "#8a806e");
+  drawWorkoutYear("chartWorkout365", year); // stays bar chart
+}
+
+renderCharts();
+
+/* ===================== MOCK DATA (首次自動建立) ===================== */
+(function generateMock() {
+  if (localStorage.getItem("healthHistory")) return;
+
+  let mock = [];
+  let weight = 60;
+  let nutri = 62;
+
+  for (let i = 365; i > 0; i--) {
+    let date = new Date();
+    date.setDate(date.getDate() - i);
+    weight += (Math.random() - 0.5) * 0.2;
+    nutri += (Math.random() - 0.5) * 1.2;
+
+    mock.push({
+      date: date.toISOString().split("T")[0],
+      weight: parseFloat(weight.toFixed(1)),
+      nutri: parseInt(Math.max(45, Math.min(70, nutri))),
+      workout: Math.random() > 0.35 ? 1 : 0
+    });
+  }
+
+  localStorage.setItem("healthHistory", JSON.stringify(mock));
+})();
+
+</script>
+
+</body>
+<footer>
+  <div class="container-fluid">
+    <div class="row pt-2 pb-2 bg-light justify-content-center">
+      <div class="py-5 px-3 text-dark col-xl-2">Explore<br>
+        <ul class="active">
+          <li>Home</li>
+          <li>Features</li>
+          <li>Blog</li>
+          <li>Stories</li>
+        </ul>
+      </div>
+      <div class="py-5 text-dark col-xl-2">Wellness<br>
+        <ul class="active">
+          <li>Nutrition</li>
+          <li>Fitness</li>
+          <li>Tips</li>
+          <li>Tracker</li>
+        </ul>
+      </div>
+      <div class="py-5 text-dark col-xl-2">Support<br>
+        <ul class="active">
+          <li>Help Center</li>
+          <li>Contact Us</li>
+          <li>FAQ</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+<div class="py-5 text-dark col-xl-2">Follow Us<br>&nbsp;&nbsp;
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><br>&nbsp;&nbsp;
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a><br>&nbsp;&nbsp;
+  <a href="https://www.facebook.com/?locale=zh_TW" target="_blank" rel="noopener">Facebook</a><br>&nbsp;&nbsp;
+  <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a></div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row pb-4 bg-light justify-content-center text-center">Designed for a healthier, lighter you.<br>
+      © 2025 Achieve Your Dream Body. All Rights Reserved.</div>
+  </div>
+</footer>
+</html>
